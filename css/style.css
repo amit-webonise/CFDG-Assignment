@@ -1,0 +1,177 @@
+body{
+background:url("../images/background.png"); 
+background-size: cover;
+font-family: 'helvetica' arial;
+font-size: 12px;
+
+}
+h1, h2, h3, h4, h5, h6, p, img, b, i, ul, ol {
+	padding: 0;
+	margin: 0;
+}
+ul, ol {
+	list-style: none;
+}
+.signInBg{
+background:url("../images/sign-in-bg.png") repeat;
+border-bottom: 1px solid #d6e2f6;
+}
+.signInBg a{
+	color: #fff;
+	text-decoration: none;
+	float: right;
+	padding: 10px 0;
+}
+.logo{
+	padding: 36px 0 0 0;
+}
+.logo a{
+background:url("../images/img-logo.png") no-repeat;
+width: 432px;
+height: 72px;
+float: left;
+}
+.menu{
+	background:#e1e5ea url("../images/menu-gredient.png") repeat-x; 
+		height: 54px;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 20px;
+		box-shadow: 0px 0px 3px #bfd0e3;
+	-moz-box-shadow: 0px 0px 2px #bfd0e3;
+-webkit-box-shadow: 0px 0px 2px #bfd0e3;
+}
+.menu li{
+	float: left;	
+	background: url("../images/menu_divider.png") no-repeat left 15px;
+	text-transform: uppercase;
+}
+.menu a{
+	padding: 16px 73px 17px 70px;
+	display: block;
+	text-decoration: none;
+	font-size: 15px;	
+	color: #333333;
+}
+.menu li:first-child{
+	background: none;
+}
+.menu li:first-child a{
+	padding: 15px 22px 38px 24px;
+}
+.menu a:hover,
+.menu .active{
+	border-bottom: 1px solid #0096d6;
+}
+.menu i{
+	background: url("../images/sprite-img.png") no-repeat;
+	float: left;
+	width: 20px;
+	height: 15px;
+}
+.menu .icoHome{
+	background-position:-3px -4px;
+	width: 23px;
+	height: 21px;
+}
+.menu .icoAbout{
+	background-position:-6px -26px;
+}
+.menu .icoChapter{
+		background-position:-6px -44px;
+}
+.menu .icoEvent{
+			background-position:-6px -67px;
+}
+.menu .icoWiki{
+			background-position:-6px -87px;
+}
+.menu a:hover,
+.active .icoHome{
+	background-position:-3px -4px
+}
+.menu a:hover .icoAbout,
+.active .icoAbout{
+	background-position:-36px -26px;
+}
+.menu a:hover .icoChapter,
+.active .icoChapter{
+		background-position:-36px -45px;
+}
+.menu a:hover .icoEvent,
+.active .icoEvent{
+			background-position:-36px -68px;
+}
+.menu a:hover .icoWiki,
+.active .icoWiki{
+			background-position:-36px -88px;
+}
+.banner{
+	margin-top: 20px;
+	background: url("../images/banner.png");
+	width: 940px;
+	height: 350px;
+	position: relative;
+}
+.pegination li{
+float: left;
+}
+.pegination a{
+	background: url("../images/sprite-img.png") -15px -108px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	border-radius: 16px;	
+	text-decoration: none;
+	}
+.pegination .prev{
+background-position:-15px -142px;
+	right:156px;
+	bottom:34px;
+	width: 15px;
+	height: 21px;
+}
+.pegination .pageOne{
+right:120px;
+	bottom:31px;
+}
+.pegination .pageTwo{
+right:84px;
+	bottom:31px;
+}
+.pegination .pageThree{
+right:46px;
+	bottom:31px;
+}
+.pegination .next{
+background-position:-35px -142px;
+	right:23px;
+	bottom:34px;
+	width: 15px;
+	height: 21px;
+}
+.pegination span{
+	text-align: center;
+	font-size: 15px;
+	color: #000000;
+	font-weight: bold;
+	vertical-align: middle;
+	padding:7px 0 0 10px;
+}
+.active span{
+	color: #077fc2;
+}
+.pegination button:hover,
+.pegination button{
+	position: absolute;
+	left:50px;
+	bottom: 60px;
+	background:url("../images/button_gredient.png") repeat-x;
+	width: 135px;
+	height: 35px;
+	border: 1px solid #813516; 
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
