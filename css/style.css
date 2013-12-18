@@ -5,13 +5,14 @@ font-family: 'helvetica' arial;
 font-size: 12px;
 
 }
-h1, h2, h3, h4, h5, h6, p, img, b, i, ul, ol {
+h1, h2, h3, h4, h5, h6, p, img, b, i, ul, ol, li {
 	padding: 0;
 	margin: 0;
 }
 ul, ol {
 	list-style: none;
 }
+/*signin section styling starts*/
 .signInBg{
 background:url("../images/sign-in-bg.png") repeat;
 border-bottom: 1px solid #d6e2f6;
@@ -22,14 +23,16 @@ border-bottom: 1px solid #d6e2f6;
 	float: right;
 	padding: 10px 0;
 }
+/*signin section styling ends*/
+/*header section styling starts*/
 .logo{
 	padding: 36px 0 0 0;
 }
 .logo a{
-background:url("../images/img-logo.png") no-repeat;
-width: 432px;
-height: 72px;
-float: left;
+		background:url("../images/img-logo.png") no-repeat;
+		width: 432px;
+		height: 72px;
+		float: left;
 }
 .menu{
 	background:#e1e5ea url("../images/menu-gredient.png") repeat-x; 
@@ -38,16 +41,16 @@ float: left;
 		border-radius: 5px;
 		margin-top: 20px;
 		box-shadow: 0px 0px 3px #bfd0e3;
-	-moz-box-shadow: 0px 0px 2px #bfd0e3;
--webkit-box-shadow: 0px 0px 2px #bfd0e3;
+		-moz-box-shadow: 0px 0px 2px #bfd0e3;
+		-webkit-box-shadow: 0px 0px 2px #bfd0e3;
 }
 .menu li{
-	float: left;	
-	background: url("../images/menu_divider.png") no-repeat left 15px;
-	text-transform: uppercase;
+		float: left;	
+		background: url("../images/menu_divider.png") no-repeat left 15px;
+		text-transform: uppercase;
 }
 .menu a{
-	padding: 16px 73px 17px 70px;
+	padding: 19px 73px 14px 70px;
 	display: block;
 	text-decoration: none;
 	font-size: 15px;	
@@ -174,4 +177,93 @@ background-position:-35px -142px;
 	text-transform: uppercase;
 	color: #fff;
 }
+/*header section styling ends*/
+/*middle section styling starts*/
+.announcer{
+margin-top: 20px;	
+border: 1px solid #ccc;
+border-radius:5px;
+background: url("../images/bg_announcer.png") repeat-y;
+padding-bottom: 30px;
+}
+.announcer h3,
+.map h3{
+	background: url("../images/announcer_bg.png") repeat-x;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	padding-left: 21px
+}
+.speech{
+	padding: 15px 0 0 20px
+}
+.speech img{
+	margin:5px 20px 0 0;
+	border: 1px solid #a6abad;
+}
+.listing{
+	width: 185px;
+}
+.date{
+	color: #888888;
+	padding-bottom: 4px;
+}
+.speechTitle a{
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.speechTitle a:hover{
+	color:#0786bb;
+}
+.speechContent{
+	color: #666666;
+	font-size: 13px;
+	padding: 4px 0 10px 0;
+}
+.speech button{
+	font-size: 10px;
+	border-radius: 5px;
+	border: 1px solid #b8b8b8;
+	background: url("../images/btn-learn-more.png");
+	width: 90px;
+	height: 20px;
+}
+.map{
+	background: url("../images/map-bg.png");
+	background-size:cover;
+	margin-top: 20px;	
+border: 1px solid #ccc;
+padding-bottom: 12px;
+}
+.map .well{
+	background: none;
+	border: 1px solid #7faac5;
+	margin: 20px 25px 0 25px;
+}
+.map img{
+		margin:10px 25px 0 25px;
+}
+.createNew{
+	margin:13px 25px 0 25px;
+}
+.createNew label{
+float: left;
+margin-bottom: 0px;
+color: #666666;
+font-size: 15px;
+padding-top: 10px;
+}
+.createNew button{
+	float: right;
+	background: url("../images/create-button-grd.png") repeat-x;
+	height: 36px;
+	width: 152px;
+	border-radius: 5px;
+	border: 1px solid #813516;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
 
+/*middel section styling ends*/
