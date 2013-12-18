@@ -14,8 +14,13 @@ ul, ol {
 }
 /*signin section styling starts*/
 .signInBg{
-background:url("../images/sign-in-bg.png") repeat;
 border-bottom: 1px solid #d6e2f6;
+background-color: #1f4975;
+  background-image: -moz-linear-gradient(top, #1f4975, #1f293a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1f4975), to(#1f293a));
+  background-image: -webkit-linear-gradient(top, #1f4975, #1f293a);
+  background-image: -o-linear-gradient(top, #1f4975, #1f293a);
+  background-image: linear-gradient(to bottom, #1f4975, #1f293a);
 }
 .signInBg a{
 	color: #fff;
@@ -281,8 +286,9 @@ padding-top: 10px;
 /*middel section styling ends*/
 /*upoming events section styling starts*/
 .events{
-	margin: 20px 0;
+	margin-top: 20px;
 	position: relative;
+	padding-bottom: 30px;
 }
 .events ul{
 margin: 30px 0 10px 0;
@@ -305,6 +311,12 @@ margin-left: 30px;
 	position: relative;
 	border-radius:5px;
 	padding: 0 10px;
+}
+.company a{
+	text-decoration: none;
+}
+.company a:hover{
+	color: #7025a8;
 }
 .company .tags,
 .tags i,
@@ -333,7 +345,6 @@ margin-left: 30px;
 .company .learnTitle{
 	color:#0078ac;
 	font-size: 18px;
-	text-decoration: none;
 }
 .teacherName i{
 background: url("../images/sprite-img1.png") -24px 25px;
@@ -379,3 +390,52 @@ right:10px;
 top: 240px;
 }
 /*upoming events section styling ends*/
+/*footer section styling starts*/
+.footer{
+	background:url("../images/footer_bg.png") repeat;
+	margin-top: 20px;
+}
+.footerMenu{
+	color: #fff;
+	padding-top: 20px;
+}
+.foundryMenu li{
+float: left;
+padding-left:10px;
+color: #3e3f44;
+font-size: 13px;
+}
+.foundryMenu a{
+	text-decoration: none;
+}
+.foundryMenu a:hover{
+	color: #fff;	
+}
+.foundryMenu p{
+float: left;
+color: #979799;
+font-size:15px;
+padding-right: 10px;
+}
+.socialNw{
+	text-align: center;
+}
+.socialNw a{
+	display: inline-block;
+	text-align: center;
+	background: url("../images/img_socialnw.png") no-repeat;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+.socialNw .fb{
+	background-position: -1px -40px;	
+
+}
+.socialNw .twt{
+	background-position: -1px -1px;
+}
+.socialNw .uTube{
+		background-position: -1px -79px;
+}
+/*footer section styling ends*/
