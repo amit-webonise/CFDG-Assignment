@@ -16,6 +16,7 @@ ul, ol {
 border-bottom: 1px solid #d6e2f6;
 background-color: #1f4975; 
  background-image: linear-gradient(to bottom, #1f4975, #1f293a);
+ margin-bottom: 36px;
 }
 .signInBg a{
 	color: #fff;
@@ -23,13 +24,16 @@ background-color: #1f4975;
 	float: right;
 	padding: 10px 0;
 }
+.signInBg a:hover{
+	color:#7cbdea;
+}
 /*signin section styling ends*/
 /*header section styling starts*/
 .pattern{
 	background: url("../images/pattern.png") no-repeat center bottom;
 }
 .logo{
-	margin-top: 36px;
+	margin-bottom: 20px;
 }
 .logo a{
 		background:url("../images/img-logo.png") no-repeat;
@@ -42,10 +46,10 @@ background-color: #1f4975;
 		height: 54px;
 		text-align: center;
 		border-radius: 5px;
-		margin-top: 20px;
 		box-shadow: 0px 0px 3px #bfd0e3;
 		-moz-box-shadow: 0px 0px 2px #bfd0e3;
 		-webkit-box-shadow: 0px 0px 2px #bfd0e3;
+		margin-bottom: 20px;
 }
 .menu li{
 		float: left;	
@@ -53,7 +57,7 @@ background-color: #1f4975;
 		text-transform: uppercase;
 }
 .menu a{
-	padding: 19px 73px 13px 70px;
+	padding: 19px 73px 15px 70px;
 	display: block;
 	text-decoration: none;
 	font-size: 15px;	
@@ -69,6 +73,12 @@ background-color: #1f4975;
 .menu .active{
 	border-bottom: 2px solid #0096d6;
 }
+.menu a:hover{
+	padding-bottom: 13px;
+}
+.menu .active a:hover{
+	border: none;
+}
 .menu i{
 	background: url("../images/sprite-img.png") no-repeat;
 	float: left;
@@ -76,7 +86,7 @@ background-color: #1f4975;
 	height: 15px;
 }
 .menu .icoHome{
-	background-position:-3px -4px;
+	background-position:-32px -4px;
 	width: 23px;
 	height: 21px;
 }
@@ -92,7 +102,7 @@ background-color: #1f4975;
 .menu .icoWiki{
 			background-position:-6px -87px;
 }
-.menu a:hover,
+.menu a:hover .icoHome,
 .active .icoHome{
 	background-position:-3px -4px
 }
@@ -113,14 +123,39 @@ background-color: #1f4975;
 			background-position:-36px -88px;
 }
 .banner{
-	margin-top: 20px;
-	background: url("../images/banner.png");
 	width: 940px;
 	height: 350px;
-	position: relative;
+	margin-bottom: 20px;
 }
-.pegination li{
+.banner .pegination li{
 float: left;
+}
+.konwledge{
+	float: left;
+	width:440px;
+	height: 304px;
+	background: url("../images/knowledgebg.png") repeat;
+	color: #fff;
+	padding: 45px 75px 0 45px;
+	}
+.konwledge h1,
+.konwledge h3{
+	font-weight: normal;
+}
+.konwledge h1{
+	font-size: 42px;
+	line-height: 45px;
+	padding-bottom: 10px;
+}
+.konwledge h3{
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.network{
+	float: right;
+	width: 380px;
+	height: 349px;
+	position: relative;
 }
 .pegination a{
 	background: url("../images/sprite-img.png") -15px -108px;
@@ -167,14 +202,11 @@ background-position:-35px -142px;
 .active span{
 	color: #077fc2;
 }
-.pegination .btnOrange{
-	position: absolute;
-	left:50px;
-	bottom: 54px;
+.konwledge .btnOrange{
 	width: 135px;
 	height: 35px;
 }
-.pegination .btnOrange,
+.konwledge .btnOrange,
 .createNew .btnOrange{
 	text-transform: uppercase;
 	color: #fff;
@@ -190,17 +222,14 @@ background-position:-35px -142px;
 }
 /*header section styling ends*/
 /*middle section styling starts*/
-.announcer{
-margin-top: 20px;	
+.announcer{	
 border: 1px solid #ccc;
 border-radius:5px;
 background: url("../images/map-bg.png") repeat;
-padding-bottom: 28px;
+padding-bottom: 10px;
+margin-bottom: 20px;
 }
-
-.events h3,
-.announceTitle,
-.mapTitle{
+.announcer .titleIcon{
 	background: url("../images/announcer_bg.png") repeat-x;
 	border-bottom: 1px solid #ccc;
 	font-size: 18px;
@@ -209,43 +238,48 @@ padding-bottom: 28px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
-
-.announceTitle h3,
-.mapTitle h3{
+.titleIcon h3{
 font-size: 18px;
 display: inline-block;
 }
-.speech{
+.announcer ul{
 	padding: 15px 0 0 20px
 }
-.speech img{
+.pick{
+	float: left;
+}
+.pick img{
 	margin:5px 20px 0 0;
 	border: 1px solid #a6abad;
 	width: 64px;
 	height: 65px;
 }
-.listing{
+.announcer .listing{
 	width: 185px;
+	float: left;
 }
-.date{
+.announcer li{
+	padding-bottom: 20px;
+}
+.listing .date{
 	color: #666666;
 	padding-bottom: 2px;
 }
-.speechTitle a{
+.listing a{
 	color: #000;
 	font-size: 16px;
 	font-weight: bold;
 	text-decoration: none;
 }
-.speechTitle a:hover{
+.listing a:hover{
 	color:#0786bb;
 }
-.speechContent{
+.listing .speechContent{
 	color: #666666;
 	font-size: 13px;
 	padding: 4px 0 10px 0;
 }
-.speech .btnGrey{
+.listing .btnGrey{
 	font-size: 10px;
 	border-radius: 5px;
 	border: 1px solid #b8b8b8;
@@ -259,21 +293,13 @@ display: inline-block;
   background-image: linear-gradient(to bottom, #fefefe, #d0d0d0);
 
 }
-.map, 
-.events{
-	background: url("../images/map-bg.png") repeat;
-	margin-top: 20px;	
-border: 1px solid #ccc;
-padding-bottom: 12px;
-border-radius: 5px;
+.map{
+	padding:20px 25px 0 25px;
 }
-.map img{
-		margin:10px 25px 0 25px;
+.map .createNew{
+	margin:13px 0 7px 0;
 }
-.createNew{
-	margin:13px 25px 0 25px;
-}
-.createNew label{
+.createNew p{
 float: left;
 margin-bottom: 0px;
 color: #666666;
@@ -292,8 +318,8 @@ padding-top: 10px;
 	position: relative;
 	padding-bottom: 30px;
 }
-.events ul{
-margin: 30px 0 10px 0;
+.events ul {
+    padding: 15px 0px 0px 0px;
 }
 .events li{
 	float: left;
@@ -302,7 +328,7 @@ margin: 30px 0 10px 0;
 .events li:first-child{
 margin-left: 30px;
 }
-.company{
+.events li{
 	background-color: #fff;
 	width: 258px;
 	min-height: 386px;
@@ -311,23 +337,22 @@ margin-left: 30px;
 	border-radius:5px;
 	padding: 0 10px;
 }
-.company a{
+.events a{
 	text-decoration: none;
 }
-.company a:hover{
+.events a:hover{
 	color: #7025a8;
 }
-.company .bussinessTags,
-.learnTags,
+.events .bussinessTags,
+.events .learnTags,
 .bussinessTags i,
 .learnTags i,
-.imgPrev i,
-.imgNext i,
-.announceTitle i,
-.mapTitle i,
+.imgPrev,
+.imgNext,
+.titleIcon i,
 .location,
 .submit{
-	background: url("../images/sprite-img1.png") -18px -10px;
+	background: url("../images/sprite-img1.png") -10px -3px;
 	width: 21px;
 	height: 25px;
 	position: absolute;
@@ -335,47 +360,50 @@ margin-left: 30px;
 	top:-2px;
 	float: right;
 }
-.announceTitle i,
-.mapTitle i{
-	background-position: -9px -69px;
+.titleIcon .icoAnnounce,
+.titleIcon .icoMap,
+.titleIcon .icoEvent{
+	background-position: -4px -63px;
 	width: 57px;
 	height: 38px;
 	right:0px;
 	top:0px;
-	opacity: 0.2;
 }
-.mapTitle i{
-	background-position: -19px -138px;
+.titleIcon .icoMap{
+	background-position: -1px -136px;
+}
+.titleIcon .icoEvent{
+	background-position: -16px -214px;
 }
 .bussinessTags i,
 .learnTags i{
-	background-position:-46px -8px;
+	background-position:-38px -1px;
 	width: 15px;
 	height: 13px;
 	right: 3px;
 	top:4px;
 }
 .learnTags i{
-	background-position:-47px -23px;
+	background-position:-39px -16px;
 }
-.company img{
+.events img{
 	width: 260px;
 	height:150px;
 	padding:3px 0 16px 0;
 }
 .map button:hover,
-.pegination button:hover{
+.konwledge button:hover{
 color:#000;
 }
 .speech button:hover{
 	color: #0078ac;
 }
-.company .learnTitle{
+.events .learnTitle{
 	color:#0078ac;
 	font-size: 18px;
 }
 .teacherName i{
-background: url("../images/sprite-img1.png") -24px 25px;
+background: url("../images/sprite-img1.png") -15px 70px;
 float: left;
 width: 13px;
 height: 12px;
@@ -402,44 +430,42 @@ margin:2px 5px 0 0;
 	font-weight: bold;
 	vertical-align: middle;
 }
-.imgPrev i{
-background-position: -47px 28px;
-position: absolute;
+.imgPrev{
+background-position: -39px 74px;
 width:12px;
 height: 20px;	
 left:10px;
-top: 240px;
+top: 215px;
 }
-.imgNext i{
-background-position: -68px 28px;
-position: absolute;
+.imgNext{
+background-position: -61px 74px;
 width:12px;
 height: 20px;	
 right:10px;
-top: 240px;
+top: 215px;
+}
+.searchBar{
+	position: relative;
+	margin-bottom: 10px;
 }
 .searchBar input{
 width: 505px;
 border: 1px solid #7faac5;
 background: none;
-padding: 5px 30px;
+padding: 5px 30px ;
 margin-bottom: 0px;
+}
 
-}
-.searchBar{
-	margin: 20px 25px 0 25px;
-	position: relative;
-}
 .location,
 .submit{
-	background-position:-48px -39px;
+	background-position:-41px -32px;
 	right: 15px;
 	top: 10px;
 	width: 15px;
 	height: 13px;
 }
 .submit{
-		background-position:-23px -39px;
+		background-position:-15px -33px;
 	left: 14px;
 	top: 10px;
 	width: 10px
@@ -525,6 +551,9 @@ display: inline;
 }
 .footerSubMenu a:hover{
 	color: #fff;
+}
+.copywrite a:hover{
+	color:#a9370a;
 }
 .copywrite{
 	color: #fff;
