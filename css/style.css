@@ -55,7 +55,7 @@ background-color: #1f4975;
 		text-transform: uppercase;
 }
 .menu a{
-	padding: 19px 73px 14px 70px;
+	padding: 19px 73px 13px 70px;
 	display: block;
 	text-decoration: none;
 	font-size: 15px;	
@@ -65,11 +65,11 @@ background-color: #1f4975;
 	background: none;
 }
 .menu li:first-child a{
-	padding: 15px 22px 38px 24px;
+	padding: 15px 22px 37px 24px;
 }
 .menu a:hover,
 .menu .active{
-	border-bottom: 1px solid #0096d6;
+	border-bottom: 2px solid #0096d6;
 }
 .menu i{
 	background: url("../images/sprite-img.png") no-repeat;
@@ -172,7 +172,7 @@ background-position:-35px -142px;
 .pegination .btnOrange{
 	position: absolute;
 	left:50px;
-	bottom: 60px;
+	bottom: 54px;
 	width: 135px;
 	height: 35px;
 }
@@ -196,16 +196,26 @@ background-position:-35px -142px;
 margin-top: 20px;	
 border: 1px solid #ccc;
 border-radius:5px;
-background: url("../images/bg_announcer.png") repeat-y;
-padding-bottom: 30px;
+background: url("../images/map-bg.png") repeat;
+padding-bottom: 28px;
 }
-.announcer h3,
-.map h3,
-.events h3{
+
+.events h3,
+.announceTitle,
+.mapTitle{
 	background: url("../images/announcer_bg.png") repeat-x;
 	border-bottom: 1px solid #ccc;
 	font-size: 18px;
-	padding-left: 21px
+	padding-left: 21px;
+	position: relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.announceTitle h3,
+.mapTitle h3{
+font-size: 18px;
+display: inline-block;
 }
 .speech{
 	padding: 15px 0 0 20px
@@ -253,8 +263,7 @@ padding-bottom: 30px;
 }
 .map, 
 .events{
-	background: url("../images/map-bg.png");
-	background-size:cover;
+	background: url("../images/map-bg.png") repeat;
 	margin-top: 20px;	
 border: 1px solid #ccc;
 padding-bottom: 12px;
@@ -300,9 +309,6 @@ margin: 30px 0 10px 0;
 .events li:first-child{
 margin-left: 30px;
 }
-.pattern{
-	background: url("../images/pattern.png") no-repeat center bottom;
-}
 .company{
 	background-color: #fff;
 	width: 258px;
@@ -318,30 +324,59 @@ margin-left: 30px;
 .company a:hover{
 	color: #7025a8;
 }
-.company .tags,
-.tags i,
+.company .bussinessTags,
+.learnTags,
+.bussinessTags i,
+.learnTags i,
 .imgPrev i,
-.imgNext i{
+.imgNext i,
+.announceTitle i,
+.mapTitle i,
+.location,
+.submit{
 	background: url("../images/sprite-img1.png") -18px -10px;
 	width: 21px;
 	height: 25px;
 	position: absolute;
 	right: 14px;
 	top:-2px;
+	float: right;
 }
-.tags i{
+.announceTitle i,
+.mapTitle i{
+	background-position: -9px -69px;
+	width: 57px;
+	height: 38px;
+	right:0px;
+	top:0px;
+	opacity: 0.2;
+}
+.mapTitle i{
+	background-position: -19px -138px;
+}
+.bussinessTags i,
+.learnTags i{
 	background-position:-46px -8px;
 	width: 15px;
 	height: 13px;
 	right: 3px;
 	top:4px;
 }
+.learnTags i{
+	background-position:-47px -23px;
+}
 .company img{
 	width: 260px;
 	height:150px;
 	padding:3px 0 16px 0;
 }
-
+.map button:hover,
+.pegination button:hover{
+color:#000;
+}
+.speech button:hover{
+	color: #0078ac;
+}
 .company .learnTitle{
 	color:#0078ac;
 	font-size: 18px;
@@ -382,28 +417,60 @@ left:10px;
 top: 240px;
 }
 .imgNext i{
-background-position: -69px 28px;
+background-position: -68px 28px;
 position: absolute;
 width:12px;
 height: 20px;	
 right:10px;
 top: 240px;
 }
+.searchBar input{
+width: 515px;
+margin: 20px 25px 0 25px;
+border: 1px solid #7faac5;
+background: none;
+padding: 5px 25px;
+
+}
+.searchBar{
+	margin-bottom: 0px;position: relative;
+}
+.location,
+.submit{
+	background-position:-48px -39px;
+	right: 35px;
+	top: 29px;
+	width: 15px;
+	height: 13px;
+}
+.submit{
+		background-position:-23px -39px;
+	left: 35px;
+	top: 29px;
+	width: 10px
+}
 /*upoming events section styling ends*/
 /*footer section styling starts*/
 .footer{
 	background:url("../images/footer_bg.png") repeat;
-	margin-top: 20px;
+	margin-top: 40px;
+	border-top:1px solid #616265;
 }
 .footerMenu{
 	color: #fff;
-	padding-top: 20px;
+	padding: 27px 0 31px 0;
 }
 .foundryMenu li{
 float: left;
-padding-left:10px;
+padding:0 0 3px 7px;
 color: #3e3f44;
 font-size: 13px;
+}
+.foundryMenu a{
+	padding-right: 2px;
+}
+.foundryMenu li:first-child{
+	padding-left: 8px;
 }
 .foundryMenu a{
 	text-decoration: none;
@@ -419,23 +486,56 @@ padding-right: 10px;
 }
 .socialNw{
 	text-align: center;
+	background: url("../images/socialnwbg.png") no-repeat;
+	height: 52px;
+	padding-top: 16px;
 }
 .socialNw a{
 	display: inline-block;
 	text-align: center;
 	background: url("../images/img_socialnw.png") no-repeat;
-	width: 40px;
-	height: 40px;
-	margin-right: 10px;
+	width: 38px;
+	height: 33px;
+	margin-right: 18px;
 }
 .socialNw .fb{
-	background-position: -1px -40px;	
+	background-position: -34px 0px;	
 
 }
 .socialNw .twt{
-	background-position: -1px -1px;
+	background-position: 2px 0px;
 }
 .socialNw .uTube{
-		background-position: -1px -79px;
+		background-position: -71px 0px;
+}
+.footerSubMenu{
+	text-align: center;
+	padding-top: 35px;
+}
+.footerSubMenu li{
+display: inline;
+		background: url("../images/dot.png") no-repeat 5px 5px;
+		text-transform: uppercase;
+}
+.footerSubMenu li:first-child{
+	background: none;
+}
+.footerSubMenu a{
+	padding-left:20px;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;	
+}
+.footerSubMenu a:hover{
+	color: #fff;
+}
+.copywrite{
+	color: #fff;
+	text-align: center;
+	padding:3px 0 30px 0;
+}
+.copywrite a{
+	font-weight: bold;
+	text-decoration: none;
 }
 /*footer section styling ends*/
