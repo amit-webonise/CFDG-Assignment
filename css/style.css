@@ -3,6 +3,11 @@ background:url("../images/background.png");
 background-size: cover;
 font-family: 'helvetica' arial;
 font-size: 12px;
+background-repeat: repeat, no-repeat !important;
+background-position: top center;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover;
 }
 h1, h2, h3, h4, h5, h6, p, img, b, i, ul, ol, li {
 	padding: 0;
@@ -17,6 +22,9 @@ border-bottom: 1px solid #d6e2f6;
 background-color: #1f4975; 
  background-image: linear-gradient(to bottom, #1f4975, #1f293a);
  margin-bottom: 36px;
+box-shadow: 0px 0px 5px #8aa3b7;
+		-moz-box-shadow: 0px 0px 5px #8aa3b7;
+		-webkit-box-shadow: 0px 0px 5px #8aa3b7;
 }
 .signInBg a{
 	color: #fff;
@@ -31,6 +39,7 @@ background-color: #1f4975;
 /*header section styling starts*/
 .pattern{
 	background: url("../images/pattern.png") no-repeat center bottom;
+	border-bottom: 1px solid #262b34;
 }
 .logo{
 	margin-bottom: 20px;
@@ -57,7 +66,7 @@ background-color: #1f4975;
 		text-transform: uppercase;
 }
 .menu a{
-	padding: 20px 73px 15px 73px;
+	padding: 20px 73px 13px 73px;
 	display: block;
 	text-decoration: none;
 	font-size: 13.5px;	
@@ -67,7 +76,7 @@ background-color: #1f4975;
 	background: none;
 }
 .menu li:first-child a{
-	padding: 16px 24px 37px 24px;
+	padding: 16px 25px 37px 24px;
 }
 .menu a:hover,
 .menu .active{
@@ -196,7 +205,7 @@ background-position:-35px -142px;
 }
 .pegination span{
 	text-align: center;
-	font-size: 15px;
+	font-size: 16px;
 	color: #000000;
 	font-weight: bold;
 	vertical-align: middle;
@@ -265,7 +274,7 @@ display: inline-block;
 	padding-bottom: 20px;
 }
 .listing .date{
-	color: #666666;
+	color: #888888;
 	padding-bottom: 2px;
 }
 .listing h4 a{
@@ -292,6 +301,7 @@ display: inline-block;
   text-decoration: none;
   color: #333333;
   font-weight: bold;
+  text-shadow:3px 3px 3px #fff;
 }
 .map{
 	padding:20px 25px 0 25px;
@@ -310,6 +320,7 @@ padding-top: 10px;
 	float: right;
 	height: 36px;
 	width: 162px;
+	 text-shadow:0px 0px 3px #963812;
 }
 /*middel section styling ends*/
 /*upoming events section styling starts*/
@@ -350,7 +361,7 @@ margin-left: 30px;
 .titleIcon i,
 .location,
 .submit{
-	background: url("../images/sprite-img1.png") -10px -4px;
+	background: url("../images/sprite-img1.png") -11px -4px;
 	width: 21px;
 	height: 25px;
 	position: absolute;
@@ -361,15 +372,15 @@ margin-left: 30px;
 .titleIcon .icoAnnounce,
 .titleIcon .icoMap,
 .titleIcon .icoEvent{
-	background-position: -4px -63px;
-	width: 57px;
+	background-position: 0px -63px;
+	width: 59px;
 	height: 38px;
 	right:0px;
 	top:0px;
 	opacity: 0.2;
 }
 .titleIcon .icoMap{
-	background-position: -1px -136px;
+	background-position: -3px -131px;
 }
 .titleIcon .icoEvent{
 	background-position: -16px -214px;
@@ -391,7 +402,7 @@ color:#000;
 }
 .events .learnTitle{
 	color:#0078ac;
-	font-size: 18px;
+	font-size: 17px;
 }
 .teacherName i{
 background: url("../images/sprite-img1.png") -15px 70px;
@@ -407,8 +418,9 @@ margin:2px 5px 0 0;
 }
 .confDate{
 	padding-top: 9px;
-	color: #333;
+	color: #333333;
 	display: inline-block;
+	font-weight:bolder;	
 }
 .attendance {
 	color: #666;
@@ -445,6 +457,8 @@ border: 1px solid #7faac5;
 background: none;
 padding: 5px 30px ;
 margin-bottom: 0px;
+font-size: 12px;
+color:#888888;
 }
 .location,
 .submit{
@@ -461,7 +475,7 @@ margin-bottom: 0px;
 	width: 10px
 }
 .pad{
-	padding-bottom: 40px;
+	padding-bottom:20px;
 }
 /*upoming events section styling ends*/
 /*footer section styling starts*/
@@ -497,27 +511,39 @@ color: #979799;
 font-size:15px;
 padding-right: 10px;
 }
-.socialNw{
+.footer .socialNw{
 	text-align: center;
 	background: url("../images/socialnwbg.png") no-repeat;
 	height: 52px;
 	padding-top: 16px;
 }
-.socialNw a{
+.socialNw a,
+.socialNw a:hover{
 	display: inline-block;
 	background: url("../images/img_socialnw.png");
 	width: 36px;
 	height: 33px;
 	margin-right: 18px;
+	 overflow: hidden;
+
 }
 .socialNw .fb{
 	background-position: -34px 0px;	
 }
+.socialNw a:hover.fb{
+	background-position: -34px -37px;	
+}
 .socialNw .twt{
 	background-position: 0px 0px;
 }
+.socialNw a:hover.twt{
+	background-position: 0 -37px;	
+}
 .socialNw .uTube{
 		background-position: -71px 0px;
+}
+.socialNw a:hover.uTube{
+	background-position: -71px -37px;	
 }
 .footerSubMenu{
 	text-align: center;
@@ -543,12 +569,12 @@ display: inline;
 .copywrite a:hover{
 	color:#a9370a;
 }
-.copywrite{
+.footer .copywrite{
 	color: #fff;
 	text-align: center;
 	padding:3px 0 30px 0;
 }
-.copywrite a{
+.footer .copywrite a{
 	font-weight: bold;
 	text-decoration: none;
 }
